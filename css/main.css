@@ -76,17 +76,17 @@ form.chat .fromThem {
   margin-bottom: 20px;
 }
 
-form.chat .message:hover .myMessage{
+form.chat .message .myMessage{
   -webkit-transform: translateX(-130px);
   transform: translateX(-130px);
 }
 
-form.chat .message:hover .fromThem{
+form.chat .message .fromThem{
   -webkit-transform: translateX(130px);
   transform: translateX(130px);
 }
 
-form.chat .message:hover date {
+form.chat .message date {
   opacity: 1;
 }
 
@@ -175,7 +175,7 @@ form.chat .fromThem:after {
 form.chat date {
   position:absolute;
   top: 10px;
-  font-size:16px;
+  font-size:14px;
   white-space:nowrap;
   vertical-align:middle;
   color: #8b8b90;
@@ -217,21 +217,22 @@ form.chat .myMessage,form.chat .fromThem{
   font-size:16px;
 }
 
-form.chat .message:hover .myMessage{
+form.chat .message .myMessage{
   transform: translateY(18px);
   -webkit-transform: translateY(18px);
 }
 
-form.chat .message:hover .fromThem{
+form.chat .message .fromThem{
   transform: translateY(18px);
   -webkit-transform: translateY(18px);
+  text-transform: uppercase;
 }
 
 form.chat .myMessage date,form.chat .fromThem date {
   top: -20px;
   left:auto;
   right:0;
-  font-size:16px;
+  font-size:14px;
 }
 
 form.chat .myMessage,
