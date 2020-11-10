@@ -1,3 +1,9 @@
+#conversation {
+  display: none;
+}
+body, html {
+  background: white;
+}
 form.chat *{
   transition:all .5s;
   box-sizing:border-box;
@@ -169,7 +175,7 @@ form.chat .fromThem:after {
 form.chat date {
   position:absolute;
   top: 10px;
-  font-size:14px;
+  font-size:16px;
   white-space:nowrap;
   vertical-align:middle;
   color: #8b8b90;
@@ -208,7 +214,7 @@ form.chat input[type='submit']{
 }
 
 form.chat .myMessage,form.chat .fromThem{
-  font-size:12px;
+  font-size:16px;
 }
 
 form.chat .message:hover .myMessage{
@@ -225,7 +231,7 @@ form.chat .myMessage date,form.chat .fromThem date {
   top: -20px;
   left:auto;
   right:0;
-  font-size:12px;
+  font-size:16px;
 }
 
 form.chat .myMessage,

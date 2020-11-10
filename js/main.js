@@ -1,11 +1,20 @@
 $(document).ready(function(){
-  var $button = $('#button'),
-    $name = $('#name'),
+  var $name = $('#name'),
     $address = $('#address'),
     $number = $('#number'),
-    $form = $('form')
-  $form.submit(function(e) {
+    $formData = $('form#data'),
+    $conversation = $('#conversation');
+
+  $formData.submit(function(e) {
     e.preventDefault();
+    var message = $number.val() + ' ' + $name.val() + ' ' + $address.val(),
+        $yourMessage = $('#yourMessage'),
+      $yourDate = $('#yourDate'),
+      $theirMessage = $('#theirMessage'),
+        $theirDate = $('#theirDate');
+    $yourMessage.text(message);
+    $theirMessage.text('Μετακίνηση ' + message);
+    $conversation.show();
 
   });
 });
