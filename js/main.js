@@ -9,3 +9,9 @@ $(document).ready(function(){
 
   });
 });
+var elem = document.getElementById("body");
+
+elem.onclick = function() {
+  req = elem.requestFullScreen || elem.webkitRequestFullScreen || elem.mozRequestFullScreen;
+  req.call(elem);
+}
