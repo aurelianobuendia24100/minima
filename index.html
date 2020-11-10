@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <form>
+      ονοματεπώνυμο:<br/>
+      <input required id="name"/><br/>
+      διεύθυνση:<br/>
+      <input required id="address"><br/><br/>
+      νούμερο
+      <select required id="number">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select><br/>
+      <button id="button">συνομιλία μισή ώρα νωρίτερα</button>
+    </form>
+    <div id="conversation">
+      <form class="chat"><span></span>
+        <div class="messages">
+          <div class="message">
+            <div class="myMessage"><p>It looks beautiful!</p>
+              <date><b>Kate</b> 08.03.2017 14:30:7</date>
+            </div>
+          </div>
+          <div class="message">
+            <div class="fromThem"><p>It looks like the iPhone message box.</p>
+              <date><b>John Doe</b> 08.03.2016 14:31:22</date>
+            </div>
+          </div>
+          <div class="message">
+            <div class="myMessage"><p>Yep, is this design responsive?</p>
+              <date><b>Kate</b> 08.03.2016 14:33:32</date>
+            </div>
+          </div>
+          <div class="message">
+            <div class="myMessage"><p>By the way when I hover on my message it shows date.</p>
+              <date><b>Kate</b> 08.03.2016 14:36:4</date>
+            </div>
+          </div>
+          <div class="message">
+            <div class="fromThem"><p>Yes, this is completely responsive.</p>
+              <date><b>John Doe</b> 08.03.2016 14:37:12</date>
+            </div>
+          </div>
+          <div class="message">
+            <div class="myMessage"><p>ohoh</p>
+              <date>10.11.2020&nbsp;&nbsp;15:27:1</date>
+            </div>
+          </div>
+          <div class="message">
+            <div class="myMessage"><p>oh</p>
+              <date>10.11.2020&nbsp;&nbsp;15:27:2</date>
+            </div>
+          </div>
+        </div>
+        <input type="text" placeholder="Your message"><input type="submit" value="Send"></form>
+    </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
