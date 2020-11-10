@@ -27,7 +27,7 @@ $(document).ready(function(){
       $theirMessage = $('#theirMessage');
     $yourDate.text(getDate());
     $yourMessage.text(message);
-    $theirMessage.text('ΜΕΤΑΚΙΝΙΣΗ ' + normalizeGreek(message));
+    $theirMessage.text('ΜΕΤΑΚΙΝΗΣΗ ' + normalizeGreek(message));
     $conversation.show();
 
   });
